@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tae Kwon-Do ITF</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+            margin: 0 auto;
+            padding: 0 20px;
+            max-width: 1200px;
+        }
+        header {
+            color: white;
+            background-color: #1f8dd6;
+            text-align: center;
+            padding: 1em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+        header h1 {
+            font-size: 3em;
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+        }
+        nav {
+            background-color: #2d3e50;
+            padding: 0.5em;
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 1em;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        nav a:hover {
+            background-color: #f39c12;
+            color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        section {
+            margin-bottom: 2em;
+            background-color: #fff;
+            padding: 2em;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        section:hover {
+            transform: translateY(-10px);
+        }
+        h1, h2 {
+            color: #2d3e50;
+        }
+        .logo {
+            width: 80px;
+            height: 80px;
+            background-color: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+        .logo::before {
+            content: "TKD";
+            font-size: 24px;
+            font-weight: bold;
+            color: #1f8dd6;
+        }
+        .logo::after {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-left: 40px solid transparent;
+            border-right: 40px solid transparent;
+            border-bottom: 70px solid #1f8dd6;
+            transform: rotate(45deg);
+            bottom: -35px;
+            right: -35px;
+        }
+        .pure-button-primary {
+            background-color: #1f8dd6;
+        }
+        .taekwondo-image {
+            width: 100%;
+            max-width: 600px;
+            height: 400%;
+            border-radius: 10px;
+            margin: 1em auto;
+            display: block;
+        }
+        #techniques ul li{
+            font-size: 20px;
+        }
+        .belt-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1em;
+            justify-content: center;
+        }
+        .belt {
+            width: 100px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-weight: bold;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+        }
+        main {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            margin: 2em auto;
+            max-width: 1200px;
+            padding: 2em;
+        }
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1.5em;
+            margin-top: 3em;
+        }
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+            nav a {
+                padding: 1em;
+                text-align: center;
+                font-size: 1.2em;
+            }
+            nav a:hover {
+                background-color: #1f8dd6;
+                padding: 10px;
+            }
+            .logo {
+                width: 118px;
+                height: 100px;
+            }
+            .logo::before {
+                font-size: 18px;
+            }
+            .logo::after {
+                border-left: 30px solid transparent;
+                border-right: 30px solid transparent;
+                border-bottom: 52px solid #1f8dd6;
+                bottom: -26px;
+                right: -26px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/R.jpg-NhLXR4GwmVKWYPunkZcjTvZL2PImPB.jpeg" alt="Logo ITF Taekwon-Do" class="logo" />
+        <h1>Tae Kwon-Do ITF</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#home">Accueil</a></li>
+            <li><a href="#history">Histoire</a></li>
+            <li><a href="#principles">Principes</a></li>
+            <li><a href="#techniques">Techniques</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="home">
+            <h2>Bienvenue au Tae Kwon-Do ITF</h2>
+            <p>Le Tae Kwon-Do ITF est un art martial coréen qui met l'accent sur les techniques de coup de pied, le jeu de jambes rapide et une approche équilibrée de l'autodéfense et du développement personnel.</p>
+            <img src="./pratiquant.jpg" alt="Pratiquant de Tae Kwon-Do ITF" class="taekwondo-image">
+        </section>
+
+        <section id="history">
+            <h2>Histoire</h2>
+            <p>Le Tae Kwon-Do a été développé en Corée dans les années 1940 et 1950 par divers artistes martiaux coréens, avec des contributions majeures du Général Choi Hong Hi. La Fédération Internationale de Taekwon-Do (ITF) a été fondée le 22 mars 1966 par le Général Choi pour promouvoir et standardiser l'art au niveau mondial.</p>
+            <img src="./histoire.jpg" alt="Histoire du Tae Kwon-Do" class="taekwondo-image">
+        </section>
+
+        <section id="principles">
+            <h2>Principes</h2>
+            <p>Le Tae Kwon-Do ITF est guidé par cinq préceptes :</p>
+            <ul>
+                <li>Courtoisie (Ye Ui)</li>
+                <li>Intégrité (Yom Chi)</li>
+                <li>Persévérance (In Nae)</li>
+                <li>Contrôle de soi (Guk Gi)</li>
+                <li>Esprit indomptable (Baekjul Boolgool)</li>
+            </ul>
+        </section>
+
+        <section id="techniques">
+            <h2>Techniques</h2>
+            <p>Tae kwon-Do ITF se concentre davantage sur l'autodéfense, incorporant plus de techniques de main et une approche philosophique de la formation. En revanche, WTF met l'accent sur la vitesse et la concurrence, avec un fort accent sur les coups de pied-de-tête et le jeu de jambes rapides.</p>
+            <p>Le Tae Kwon-Do ITF comprend diverses techniques :</p>
+            <ul>
+                <li><b>Techniques de frappe (coups de poing, coups de pied, blocages)</b></li>
+                <img src="./tecnic.png" alt="Techniques de frappe" class="taekwondo-image">
+                <li><b>Formes (Tul)</b></li>
+                <img src="./technique1.jpg" alt="Forme 1" class="taekwondo-image">
+                <img src="./technique2.jpg" alt="Forme 2" class="taekwondo-image">
+                <li><b>Combat (Matsogi)</b></li>
+                <img src="./combat.jpg" alt="Combat" class="taekwondo-image">
+                <li><b>Autodéfense (Hosin Sul)</b></li>
+                <img src="./self.jpg" alt="Autodéfense" class="taekwondo-image">
+                <li><b>Casse (Gyokpa)</b></li>
+                <img src="./cass.jpg" alt="Casse" class="taekwondo-image">
+            </ul>
+        </section>
+
+        <section id="belts">
+            <h2>Ceintures en Tae Kwon-Do ITF</h2>
+            <p>Le système de ceintures en Tae Kwon-Do ITF représente la progression de l'élève. Voici les différentes ceintures, du débutant au maître :</p>
+            <div class="belt-list">
+                <div class="belt" style="background-color: white; color: #333; border: 1px solid #333;">Blanche</div>
+                <div class="belt" style="background-color: #FFFF00;">Jaune</div>
+                <div class="belt" style="background-color: #00FF00;">Verte</div>
+                <div class="belt" style="background-color: #0000FF;">Bleue</div>
+                <div class="belt" style="background-color: #FF0000;">Rouge</div>
+                <div class="belt" style="background-color: #000000;">Noire</div>
+            </div>
+            <p>Chaque ceinture de couleur a également des niveaux intermédiaires marqués par des barrettes, permettant une progression plus détaillée.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contactez-nous</h2>
+            <form class="pure-form pure-form-stacked">
+                <fieldset>
+                    <label for="name">Nom</label>
+                    <input id="name" type="text" placeholder="Votre nom">
+
+                    <label for="email">Email</label>
+                    <input id="email" type="email" placeholder="Votre email">
+
+                    <label for="message">Message</label>
+                    <textarea id="message" placeholder="Votre message"></textarea>
+
+                    <button type="submit" class="pure-button pure-button-primary">Envoyer</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>AntsaAndy &copy; 2024 Tae Kwon-Do ITF. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
